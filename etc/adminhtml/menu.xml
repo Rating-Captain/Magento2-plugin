@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="RatingCaptain_RatingCaptainIntegration::ratingcaptain" title="RatingCaptain" module="RatingCaptain_RatingCaptainIntegration" sortOrder="44" resource="RatingCaptain_RatingCaptainIntegration::ratingcaptain"/>
+        <add id="RatingCaptain_RatingCaptainIntegration::settings" title="Settings" module="RatingCaptain_RatingCaptainIntegration" sortOrder="10" action="adminhtml/system_config/edit/section/ratingcaptain" resource="RatingCaptain_RatingCaptainIntegration::settings" parent="RatingCaptain_RatingCaptainIntegration::ratingcaptain"/>
+    </menu>
+</config>

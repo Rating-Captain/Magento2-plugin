@@ -1,0 +1,12 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <ratingcaptain>
+            <general>
+                <is_enabled>0</is_enabled>
+                <main_page_widget>0</main_page_widget>
+                <debug>0</debug>
+            </general>
+        </ratingcaptain>
+    </default>
+</config>

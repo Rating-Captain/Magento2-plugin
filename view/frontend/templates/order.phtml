@@ -1,0 +1,20 @@
+<!-- Google Code for eCommerce  -->
+<script>
+   var RatingCaptain_data_script = {
+        "email": "<?php echo $block->getEmail();?>",
+        "external_id": "<?php echo $block->getOrderId();?>",
+        "send_after": "7",
+        
+        "products": [
+            <?php foreach($block->getOrderItems() as $orderItem):?>
+			{
+                "id": "<?php echo $orderItem->getSku();?>",
+                "name": "<?php echo $block->cleanUpValue($orderItem->getName());?>",
+                "price": "<?php echo $orderItem->getPrice();?>"
+            },
+			<?php endforeach; ?>
+        ]
+    };
+
+    window.RatingCaptain_prepere && window.RatingCaptain_prepere();
+</script>

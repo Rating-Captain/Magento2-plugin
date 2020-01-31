@@ -1,0 +1,38 @@
+{
+  "name": "rating-captain/rating-captain-integration",
+  "description": "Add RatingCaptain integration to Magento2",
+  "keywords": [
+    "magento 2",
+    "rating captain"
+    "rating collector"
+  ],
+  "require": {
+  },
+  "type": "magento2-module",
+  "version": "1.0.0",
+  "license": [
+    "OSL-3.0",
+    "AFL-3.0"
+  ],
+  "homepage": "http://ratingcaptain.com/",
+  "support": {
+    "email": "info@ratingcaptain.com",
+    "issues": "https://github.com/ratingcaptain/magento2-rating-captain-integration/issues/"
+  },
+  "authors": [
+    {
+      "name": "RatingCaptain",
+      "email": "info@ratingcaptain.com",
+      "homepage": "http://ratingcaptain.com/",
+      "role": "Leader"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "RatingCaptain\\RatingCaptainIntegration\\": ""
+    }
+  }
+}

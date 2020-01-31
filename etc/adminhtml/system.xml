@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="ratingcaptain" translate="label" sortOrder="400">
+            <label>ratingcaptain</label>
+        </tab>
+        <section id="ratingcaptainintegration" translate="label" type="text" sortOrder="350" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Rating Captain</label>
+            <tab>ratingcaptain</tab>
+            <resource>RatingCaptain_RatingCaptainIntegration::ratingcaptain</resource>
+            <group id="general" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
+
+                <field id="head" translate="label" type="button" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <frontend_model>RatingCaptain\Core\Block\Adminhtml\System\Config\Head</frontend_model>
+                    <comment><![CDATA[
+                        <ul class="ratingcaptain-head">
+                            <li><a href="https://ratingcaptain.com/en/strona/contact" target="_blank">Helpdesk</a> </li>
+                            <li><a href="https://ratingcaptain.com/app" target="_blank">Sign up for a RatingCaptain account</a> </li>
+                        </ul>
+                        ]]></comment>
+                </field>
+
+
+                <field id="is_enabled" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="2">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="tracking_id" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Main Tracking ID</label>
+                    <comment>E.g: 143daadc9ce489afc94a01ab711d8d29</comment>
+                </field>
+                <field id="main_page_widget" translate="label" type="select" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Enhanced Link Attribution</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Display rating widget on home page.</comment>
+                </field>
+                <field id="debug" translate="label" type="select" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Trace Debugging</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Trace debugging will output more verbose information to the console. To enabled trace debugging, choose Yes.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
